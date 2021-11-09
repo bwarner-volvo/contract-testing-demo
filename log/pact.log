@@ -1,0 +1,330 @@
+# Logfile created on 2021-11-08 01:55:27 +0100 by logger.rb/47272
+I, [2021-11-08T01:55:27.465859 #40668]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T01:55:27.476533 #40668]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T01:55:27.476586 #40668] DEBUG -- : body :
+I, [2021-11-08T01:55:27.498368 #40668]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 00:55:27 GMT"}, see debug logs for body
+D, [2021-11-08T01:55:27.498428 #40668] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 01:55:27 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T01:55:27.501554 #40668]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T01:55:27.503442 #40668]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T01:55:27.503482 #40668] DEBUG -- : body :
+I, [2021-11-08T01:55:27.512900 #40668]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 00:55:27 GMT"}, see debug logs for body
+D, [2021-11-08T01:55:27.512964 #40668] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T11:01:59.564562 #43327]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T11:01:59.590705 #43327]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:01:59.590757 #43327] DEBUG -- : body :
+I, [2021-11-08T11:01:59.626890 #43327]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:01:59 GMT"}, see debug logs for body
+D, [2021-11-08T11:01:59.626948 #43327] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 11:01:59 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T11:01:59.634287 #43327]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T11:01:59.636518 #43327]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:01:59.636591 #43327] DEBUG -- : body :
+I, [2021-11-08T11:01:59.638928 #43327]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:01:59 GMT"}, see debug logs for body
+D, [2021-11-08T11:01:59.638974 #43327] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T11:23:43.084065 #43822]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T11:23:43.090699 #43822]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:23:43.090765 #43822] DEBUG -- : body :
+I, [2021-11-08T11:23:43.105745 #43822]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:23:43 GMT"}, see debug logs for body
+D, [2021-11-08T11:23:43.105793 #43822] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 11:23:43 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T11:23:43.107693 #43822]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T11:23:43.109663 #43822]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:23:43.109703 #43822] DEBUG -- : body :
+I, [2021-11-08T11:23:43.111398 #43822]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:23:43 GMT"}, see debug logs for body
+D, [2021-11-08T11:23:43.111438 #43822] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T11:25:33.590597 #43949]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T11:25:33.597087 #43949]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:25:33.597131 #43949] DEBUG -- : body :
+I, [2021-11-08T11:25:33.610316 #43949]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:25:33 GMT"}, see debug logs for body
+D, [2021-11-08T11:25:33.610370 #43949] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 11:25:33 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T11:25:33.612169 #43949]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T11:25:33.613906 #43949]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:25:33.613946 #43949] DEBUG -- : body :
+I, [2021-11-08T11:25:33.615525 #43949]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:25:33 GMT"}, see debug logs for body
+D, [2021-11-08T11:25:33.615564 #43949] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T11:25:39.226749 #43977]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T11:25:39.233126 #43977]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:25:39.233170 #43977] DEBUG -- : body :
+I, [2021-11-08T11:25:39.246356 #43977]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:25:39 GMT"}, see debug logs for body
+D, [2021-11-08T11:25:39.246425 #43977] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 11:25:39 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T11:25:39.248220 #43977]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T11:25:39.249935 #43977]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T11:25:39.249968 #43977] DEBUG -- : body :
+I, [2021-11-08T11:25:39.251554 #43977]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 10:25:39 GMT"}, see debug logs for body
+D, [2021-11-08T11:25:39.251586 #43977] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T12:12:07.922910 #44921]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T12:12:07.943751 #44921]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:12:07.943807 #44921] DEBUG -- : body :
+I, [2021-11-08T12:12:07.969716 #44921]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:12:07 GMT"}, see debug logs for body
+D, [2021-11-08T12:12:07.969768 #44921] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 12:12:07 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T12:12:07.972782 #44921]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T12:12:07.974856 #44921]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:12:07.974900 #44921] DEBUG -- : body :
+I, [2021-11-08T12:12:07.995412 #44921]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:12:07 GMT"}, see debug logs for body
+D, [2021-11-08T12:12:07.995469 #44921] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T12:14:04.880623 #45083]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T12:14:04.886674 #45083]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:14:04.886717 #45083] DEBUG -- : body :
+I, [2021-11-08T12:14:04.899281 #45083]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:14:04 GMT"}, see debug logs for body
+D, [2021-11-08T12:14:04.899330 #45083] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 12:14:04 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T12:14:04.900903 #45083]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T12:14:04.902609 #45083]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:14:04.902643 #45083] DEBUG -- : body :
+I, [2021-11-08T12:14:04.904287 #45083]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:14:04 GMT"}, see debug logs for body
+D, [2021-11-08T12:14:04.904319 #45083] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T12:14:09.387402 #45114]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T12:14:09.393390 #45114]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:14:09.393435 #45114] DEBUG -- : body :
+I, [2021-11-08T12:14:09.405925 #45114]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:14:09 GMT"}, see debug logs for body
+D, [2021-11-08T12:14:09.405977 #45114] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 12:14:09 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T12:14:09.407565 #45114]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T12:14:09.409230 #45114]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T12:14:09.409269 #45114] DEBUG -- : body :
+I, [2021-11-08T12:14:09.410899 #45114]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 11:14:09 GMT"}, see debug logs for body
+D, [2021-11-08T12:14:09.410958 #45114] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T13:19:16.927448 #46721]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T13:19:16.935360 #46721]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T13:19:16.935423 #46721] DEBUG -- : body :
+I, [2021-11-08T13:19:16.949302 #46721]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 12:19:16 GMT"}, see debug logs for body
+D, [2021-11-08T13:19:16.949357 #46721] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 13:19:16 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T13:19:16.951281 #46721]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T13:19:16.953043 #46721]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T13:19:16.953079 #46721] DEBUG -- : body :
+I, [2021-11-08T13:19:16.954612 #46721]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 12:19:16 GMT"}, see debug logs for body
+D, [2021-11-08T13:19:16.954661 #46721] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T13:50:45.819142 #2184]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T13:50:46.023111 #2184]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has a matching body'
+I, [2021-11-08T13:50:46.215495 #2184]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T13:51:03.290829 #2218]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T13:51:03.467092 #2218]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has a matching body'
+I, [2021-11-08T13:51:03.662737 #2218]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:05:29.290605 #2485]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T14:05:29.482918 #2485]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has a matching body'
+I, [2021-11-08T14:05:29.662934 #2485]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:05:55.889245 #2528]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T14:05:55.896519 #2528]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:05:55.896566 #2528] DEBUG -- : body :
+I, [2021-11-08T14:05:55.921533 #2528]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:05:55 GMT"}, see debug logs for body
+D, [2021-11-08T14:05:55.921592 #2528] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 14:05:55 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T14:05:55.929242 #2528]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:05:55.931128 #2528]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:05:55.931169 #2528] DEBUG -- : body :
+I, [2021-11-08T14:05:55.942052 #2528]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:05:55 GMT"}, see debug logs for body
+D, [2021-11-08T14:05:55.942096 #2528] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T14:21:37.722132 #2839]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T14:21:37.728630 #2839]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:21:37.728677 #2839] DEBUG -- : body :
+I, [2021-11-08T14:21:37.742088 #2839]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:21:37 GMT"}, see debug logs for body
+D, [2021-11-08T14:21:37.742142 #2839] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 14:21:37 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T14:21:37.743911 #2839]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:21:37.745535 #2839]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:21:37.745573 #2839] DEBUG -- : body :
+I, [2021-11-08T14:21:37.747111 #2839]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:21:37 GMT"}, see debug logs for body
+D, [2021-11-08T14:21:37.747148 #2839] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T14:27:16.294007 #2910]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T14:27:16.301551 #2910]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:27:16.301638 #2910] DEBUG -- : body :
+I, [2021-11-08T14:27:16.317170 #2910]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:27:16 GMT"}, see debug logs for body
+D, [2021-11-08T14:27:16.317258 #2910] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 14:27:16 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T14:27:16.318991 #2910]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:27:16.320578 #2910]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:27:16.320610 #2910] DEBUG -- : body :
+I, [2021-11-08T14:27:16.322199 #2910]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:27:16 GMT"}, see debug logs for body
+D, [2021-11-08T14:27:16.322236 #2910] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T14:52:09.973301 #3329]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T14:52:09.979765 #3329]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:52:09.979823 #3329] DEBUG -- : body :
+I, [2021-11-08T14:52:09.994118 #3329]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:52:09 GMT"}, see debug logs for body
+D, [2021-11-08T14:52:09.994185 #3329] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 14:52:09 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T14:52:09.996319 #3329]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T14:52:09.998348 #3329]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T14:52:09.998397 #3329] DEBUG -- : body :
+I, [2021-11-08T14:52:10.000090 #3329]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 13:52:09 GMT"}, see debug logs for body
+D, [2021-11-08T14:52:10.000132 #3329] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T15:54:29.779566 #4479]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T15:54:29.788570 #4479]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T15:54:29.788617 #4479] DEBUG -- : body :
+I, [2021-11-08T15:54:29.826673 #4479]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 14:54:29 GMT"}, see debug logs for body
+D, [2021-11-08T15:54:29.826734 #4479] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 15:54:29 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T15:54:29.829994 #4479]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T15:54:29.832091 #4479]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T15:54:29.832163 #4479] DEBUG -- : body :
+I, [2021-11-08T15:54:29.834101 #4479]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 14:54:29 GMT"}, see debug logs for body
+D, [2021-11-08T15:54:29.834148 #4479] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T15:54:42.876143 #4515]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T15:54:42.882074 #4515]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T15:54:42.882113 #4515] DEBUG -- : body :
+I, [2021-11-08T15:54:42.894739 #4515]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 14:54:42 GMT"}, see debug logs for body
+D, [2021-11-08T15:54:42.894784 #4515] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 15:54:42 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T15:54:42.896504 #4515]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T15:54:42.898195 #4515]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T15:54:42.898230 #4515] DEBUG -- : body :
+I, [2021-11-08T15:54:42.899900 #4515]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 14:54:42 GMT"}, see debug logs for body
+D, [2021-11-08T15:54:42.899935 #4515] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2021-11-08T17:44:41.815182 #6029]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2021-11-08T17:44:41.821020 #6029]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T17:44:41.821065 #6029] DEBUG -- : body :
+I, [2021-11-08T17:44:41.833545 #6029]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"111", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 16:44:41 GMT"}, see debug logs for body
+D, [2021-11-08T17:44:41.833599 #6029] DEBUG -- : body: {
+  "admin": false, 
+  "created_on": "Mon, 08 Nov 2021 17:44:41 GMT", 
+  "id": "1234567", 
+  "name": "UserA"
+}
+
+I, [2021-11-08T17:44:41.835332 #6029]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2021-11-08T17:44:41.837068 #6029]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {}, see debug logs for body
+D, [2021-11-08T17:44:41.837106 #6029] DEBUG -- : body :
+I, [2021-11-08T17:44:41.838849 #6029]  INFO -- : Received response with status: 404, headers: {"Content-Type"=>"text/html", "Content-Length"=>"233", "Server"=>"Werkzeug/0.14.1 Python/2.7.16", "Date"=>"Mon, 08 Nov 2021 16:44:41 GMT"}, see debug logs for body
+D, [2021-11-08T17:44:41.838889 #6029] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+

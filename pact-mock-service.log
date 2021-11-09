@@ -1,0 +1,124 @@
+I, [2021-11-08T17:43:42.071614 #5982]  INFO -- : Cleared interactions
+I, [2021-11-08T17:43:42.076627 #5982]  INFO -- : Registered expected interaction GET /users/UserA
+D, [2021-11-08T17:43:42.076887 #5982] DEBUG -- : {
+  "description": "a request for UserA",
+  "providerState": "UserA exists and is not an administrator",
+  "request": {
+    "method": "get",
+    "path": "/users/UserA"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "admin": false,
+        "created_on": {
+          "json_class": "Pact::Term",
+          "data": {
+            "generate": "2016-12-15T20:16:01",
+            "matcher": {"json_class":"Regexp","o":0,"s":"\\d+-\\d+-\\d+T\\d+:\\d+:\\d+"}
+          }
+        },
+        "name": "UserA",
+        "id": {
+          "json_class": "Pact::Term",
+          "data": {
+            "generate": "00000000-0000-4000-a000-000000000000",
+            "matcher": {"json_class":"Regexp","o":0,"s":"^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\\Z"}
+          }
+        }
+      }
+    }
+  }
+}
+I, [2021-11-08T17:43:42.081264 #5982]  INFO -- : Received request GET /users/UserA
+D, [2021-11-08T17:43:42.081360 #5982] DEBUG -- : {
+  "path": "/users/UserA",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "Connection": "keep-alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "User-Agent": "python-requests/2.19.1",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-11-08T17:43:42.081506 #5982]  INFO -- : Found matching response for GET /users/UserA
+D, [2021-11-08T17:43:42.081644 #5982] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "admin": false,
+      "created_on": {
+        "json_class": "Pact::Term",
+        "data": {
+          "generate": "2016-12-15T20:16:01",
+          "matcher": {
+            "json_class": "Regexp",
+            "o": 0,
+            "s": "\\d+-\\d+-\\d+T\\d+:\\d+:\\d+"
+          }
+        }
+      },
+      "name": "UserA",
+      "id": {
+        "json_class": "Pact::Term",
+        "data": {
+          "generate": "00000000-0000-4000-a000-000000000000",
+          "matcher": {
+            "json_class": "Regexp",
+            "o": 0,
+            "s": "^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\\Z"
+          }
+        }
+      }
+    }
+  }
+}
+I, [2021-11-08T17:43:42.086383 #5982]  INFO -- : Verifying - interactions matched
+I, [2021-11-08T17:43:42.090371 #5982]  INFO -- : Writing pact for UserService to /Users/eniko_kollar/Desktop/mycode/volvo/pact-python-demo-master/tests/userserviceclient-userservice.json
+I, [2021-11-08T17:43:42.097765 #5982]  INFO -- : Cleared interactions
+I, [2021-11-08T17:43:42.102092 #5982]  INFO -- : Registered expected interaction GET /users/UserA
+D, [2021-11-08T17:43:42.102197 #5982] DEBUG -- : {
+  "description": "a request for UserA",
+  "providerState": "UserA does not exist",
+  "request": {
+    "method": "get",
+    "path": "/users/UserA"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+    }
+  }
+}
+I, [2021-11-08T17:43:42.106633 #5982]  INFO -- : Received request GET /users/UserA
+D, [2021-11-08T17:43:42.106706 #5982] DEBUG -- : {
+  "path": "/users/UserA",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "Connection": "keep-alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "User-Agent": "python-requests/2.19.1",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-11-08T17:43:42.106814 #5982]  INFO -- : Found matching response for GET /users/UserA
+D, [2021-11-08T17:43:42.106856 #5982] DEBUG -- : {
+  "status": 404,
+  "headers": {
+  }
+}
+I, [2021-11-08T17:43:42.110754 #5982]  INFO -- : Verifying - interactions matched
+I, [2021-11-08T17:43:42.114327 #5982]  INFO -- : Writing pact for UserService to /Users/eniko_kollar/Desktop/mycode/volvo/pact-python-demo-master/tests/userserviceclient-userservice.json
